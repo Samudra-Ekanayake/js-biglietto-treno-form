@@ -5,12 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+        integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body style="background-color: grey;">
+    <div class="container-fluid bg-success mt-3">
+        <div class="col-12 d-flex justify-content-center">
+            <h1">CALCOLA IL PREZZO DEL TUO BIGGLIETTO</h1>
+        </div>
+    </div>
+    <div class="container-fluid bg-danger p-4">
+        <div class="row">
+            <div class="col-10 offset-1 bg-primary">
+                <div class="row text-center mb-2">
+                    <div class="col-4">
+                        Nome Cognome
+                    </div>
+                    <div class="col-4">
+                        Km da percorrere
+                    </div>
+                    <div class="col-4">
+                        Fascia d'età
+                    </div>
+                </div>
+                <div class="row text-center mb-5">
+                    <div class="col-4">
+                        <input type="text" id="nomeCognomeInput">
+                    </div>
+                    <div class="col-4">
+                        <input type="number" id="kmInput">
+                    </div>
+                    <div class="col-4">
+                        <input type="number" id="etaInput">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <button>Genera</button>
+                        <button>Annulla</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!----   
     <div>
         Il prezzo totale del biglietto è di: <input type="text" disabled id="prezzoFinaleInput" value="0">
     </div>
+    ---->
     <script src="main.js"></script>
 </body>
 

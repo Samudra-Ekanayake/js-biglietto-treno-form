@@ -1,3 +1,5 @@
+
+const nomeCognome = prompt ("inserisci il tuo nome e cognome")
 const kmPercorso = prompt ("inserisci quanti km vuoi percorrere")
 const etaPasseggero = prompt("inserisci la tua età")
 
@@ -17,4 +19,9 @@ const prezzoFinale = (prezzoBiglietto - sconto).toFixed(2)
 
 console.log("il prezzo del biglietto è " + prezzoFinale)
 
-document.getElementById("prezzoFinaleInput").value = prezzoFinale
+//document.getElementById("prezzoFinaleInput").value = prezzoFinale
+
+
+document.getElementById("nomeCognomeInput").value = nomeCognome
+document.getElementById("kmInput").value = kmPercorso
+document.getElementById("etaInput").value = etaPasseggero
